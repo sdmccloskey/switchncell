@@ -1,0 +1,16 @@
+
+
+
+background-image: -webkit-gradient(
+	linear,
+	right bottom,
+	right bottom,
+	color-stop(0, #FF6600),
+	color-stop(0.51, #058FD9),
+	color-stop(1, #EAEBED)
+);
+background-image: -o-linear-gradient(right bottom, #FF6600 0%, #058FD9 51%, #EAEBED 100%);
+background-image: -moz-linear-gradient(right bottom, #FF6600 0%, #058FD9 51%, #EAEBED 100%);
+background-image: -webkit-linear-gradient(right bottom, #FF6600 0%, #058FD9 51%, #EAEBED 100%);
+background-image: -ms-linear-gradient(right bottom, #FF6600 0%, #058FD9 51%, #EAEBED 100%);
+background-image: linear-gradient(to right bottom, #FF6600 0%, #058FD9 51%, #EAEBED 100%);
