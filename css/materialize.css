@@ -29,13 +29,19 @@
 }*/
 
 
+.middescription{
+  margin-bottom: -20px
+}
+
 .snc3{
+  margin-right: 35px
+
   /*width: 1000px;*/
   /*clear: inherit;*/
 }
 
 .modal1{
-  margin-top:15px;
+  margin-top:30px;
 }
 .custom-gradient{
   background-image: -webkit-gradient(
