@@ -34,10 +34,11 @@
 }
 
 .snc3{
-  margin-right: 35px
+  margin-right: -25px;
+  margin-top: -320px;
 
   /*width: 1000px;*/
-  /*clear: inherit;*/
+  clear: inherit;
 }
 
 .modal1{
