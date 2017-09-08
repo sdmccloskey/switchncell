@@ -29,20 +29,21 @@
 }*/
 
 
+.row .col{
+    padding: 0 !important;
+}
 
 
 
-
-.snc3{
+/*.snc3{
   margin-right: -15px;
   margin-top: -335px;
 
   /*width: 1000px;*/
-  clear: inherit;
-}
+
 
 .modal1{
-  margin-top:30px;
+  padding: 0 !important;
 }
 .custom-gradient{
   background-image: -webkit-gradient(
