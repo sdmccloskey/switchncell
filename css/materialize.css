@@ -29,9 +29,7 @@
 }*/
 
 
-.row .col{
-    padding: 0 !important;
-}
+
 
 
 
@@ -43,7 +41,7 @@
 
 
 .modal1{
-  padding: 0 !important;
+  margin-top: 100px;
 }
 .custom-gradient{
   background-image: -webkit-gradient(
