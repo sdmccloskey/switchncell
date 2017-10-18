@@ -31,6 +31,7 @@
     "grunt-remove-logging": "^0.2.0",
     "grunt-rename": "^0.1.4",
     "grunt-sass": "^1.1.0",
+    "grunt-server-monitor": "^3.0.0",
     "grunt-text-replace": "^0.4.0",
     "jquery": "^2.1.4",
     "node-sass": "^3.4.2"

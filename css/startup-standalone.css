@@ -2220,7 +2220,7 @@ a {
 blockquote {
   margin: 20px 0;
   padding-left: 1.5rem;
-  border-left: 5px solid #1de9c3;
+  border-left: 5px solid #0a9efc;
 }
 
 i {
@@ -2280,7 +2280,7 @@ video.responsive-video {
 }
 
 .pagination li.active {
-  background-color: #1de9c3;
+  background-color: #0a9efc;
 }
 
 .pagination li.disabled a {
@@ -2464,7 +2464,7 @@ ul.staggered-list li {
 
 .page-footer {
   padding-top: 20px;
-  background-color: #1de9c3;
+  background-color: #0a9efc;
 }
 
 .page-footer .footer-copyright {
@@ -3359,7 +3359,7 @@ td, th {
 
 .pricing-table {
   margin-top: 50px;
-  border: 2px solid #1de9c3;
+  border: 2px solid #0a9efc;
 }
 
 .pricing-table.featured {
@@ -3419,11 +3419,11 @@ td, th {
 
 .pricing-table .pricing-features .pricing-feature.disabled,
 .pricing-table .pricing-features .pricing-feature.disabled i {
-  color: rgba(19, 192, 160, 0.5);
+  color: rgba(3, 128, 208, 0.5);
 }
 
 .pricing-table .pricing-features .pricing-feature:hover {
-  background-color: rgba(29, 233, 195, 0.2);
+  background-color: rgba(10, 158, 252, 0.2);
 }
 
 .section.white .pricing-header i {
@@ -3431,12 +3431,12 @@ td, th {
 }
 
 .section.light .pricing-header i, .page-footer .section.footer-copyright .pricing-header i {
-  background-color: #42c4ac;
+  background-color: #2f96d7;
 }
 
 .section.light .pricing-features .pricing-feature.disabled, .page-footer .section.footer-copyright .pricing-features .pricing-feature.disabled,
 .section.light .pricing-features .pricing-feature.disabled i, .page-footer .section.footer-copyright .pricing-features .pricing-feature.disabled i {
-  color: rgba(12, 123, 102, 0.5);
+  color: rgba(2, 82, 133, 0.5);
 }
 
 @media only screen and (max-width: 600px) {
@@ -4269,13 +4269,13 @@ td, th {
 }
 
 .blog-related li a {
-  color: #42c4ac;
+  color: #2f96d7;
   display: block;
   transition: color .3s;
 }
 
 .blog-related li a:hover {
-  color: #90dcce;
+  color: #85c1e7;
 }
 
 .blog-related li .avatar-wrapper {
@@ -4350,7 +4350,7 @@ td, th {
 
 .avatar-wrapper:hover::after {
   transform: scale(1.2);
-  border-color: #42c4ac;
+  border-color: #2f96d7;
   transition: transform 0.2s cubic-bezier(0.06, 0.59, 0.24, 1.55), border-color 0.2s;
 }
 
@@ -5240,15 +5240,15 @@ button:focus {
 }
 
 i {
-  color: #1de9c3;
+  color: #0a9efc;
 }
 
 .primary-color {
-  background-color: #1de9c3 !important;
+  background-color: #0a9efc !important;
 }
 
 .primary-color-text {
-  color: #1de9c3 !important;
+  color: #0a9efc !important;
 }
 
 .divider {
@@ -5457,7 +5457,7 @@ nav.navbar.solid {
 }
 
 nav.navbar.solid.dark, nav.navbar.solid {
-  background-color: #10a98d;
+  background-color: #0271b7;
 }
 
 nav.navbar.solid.dark :not(.dropdown-content) > li > a, nav.navbar.solid :not(.dropdown-content) > li > a {
@@ -5474,7 +5474,7 @@ nav.navbar.solid.dark a::before, nav.navbar.solid a::before {
 
 nav.navbar.solid.dark ul.dropdown-content li > a::before, nav.navbar.solid ul.dropdown-content li > a::before,
 nav.navbar.solid.dark ul.dropdown-content li > span::before, nav.navbar.solid ul.dropdown-content li > span::before {
-  background-color: #10a98d;
+  background-color: #0271b7;
 }
 
 nav.navbar .brand-logo {
@@ -5489,7 +5489,7 @@ nav.navbar .brand-logo i {
 }
 
 nav.navbar.pinned .brand-logo i {
-  color: #1de9c3;
+  color: #0a9efc;
 }
 
 nav.navbar ul > li.active > a::before,
@@ -5517,7 +5517,7 @@ nav.navbar ul a:hover {
 
 /**** HEADER ****/
 .header {
-  color: #1de9c3;
+  color: #0a9efc;
 }
 
 .header .header-wrapper {
@@ -5549,7 +5549,7 @@ nav.navbar ul a:hover {
 
 .header .header-wrapper .read-more:active {
   transform: translateY(1px);
-  color: #63f0d6;
+  color: #56bcfd;
 }
 
 .header .header-wrapper .read-more i {
@@ -5666,7 +5666,7 @@ nav.navbar ul a:hover {
 
 .section.light, .page-footer .section.footer-copyright {
   color: rgba(0, 0, 0, 0.6);
-  background-color: #42c4ac;
+  background-color: #2f96d7;
 }
 
 .section.light h1, .page-footer .section.footer-copyright h1, .section.light h2, .page-footer .section.footer-copyright h2, .section.light h3, .page-footer .section.footer-copyright h3, .section.light h4, .page-footer .section.footer-copyright h4, .section.light h5, .page-footer .section.footer-copyright h5 {

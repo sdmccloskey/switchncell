@@ -136,7 +136,7 @@ ul.side-nav.fixed:hover {
 }
 
 .side-nav .collapsible-body>ul:not(.collapsible)>li.active, .side-nav.fixed .collapsible-body>ul:not(.collapsible)>li.active {
-  background-color: #1de9c3;
+  background-color: #0a9efc;
 }
 
 .bold > a {
@@ -158,7 +158,7 @@ ul.side-nav.fixed:hover {
 nav.top-nav {
   height: 122px;
   box-shadow: none;
-  background-color: #1de9c3;
+  background-color: #0a9efc;
 }
 
 nav.top-nav a.page-title {
