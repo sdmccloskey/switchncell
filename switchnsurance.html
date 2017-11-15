@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Zoom Out - Startup</title>
+    <title>SwitchNsurance</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,35 +11,45 @@
 
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Aweseome -->
+    <script src="https://use.fontawesome.com/965fa5c20f.js"></script>
   </head>
   <body>
 
     <!-- Navbar -->
     <nav class="navbar">
       <div class="nav-wrapper">
-        <a href="horizontal-half.html" class="brand-logo"><i class="icon-diamond"></i></a>
+        <a href="index.html" class="brand-logo"><i class="material-icons secondary-color-text">home</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li class="active"><a class="dropdown-button" href="#!" data-activates="pages" data-constrainWidth="false" data-belowOrigin="true">Pages<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li class="active"><a class="dropdown-button" href="#!" data-activates="pages" data-constrainWidth="false" data-belowOrigin="true">Services<i class="material-icons right white-text">arrow_drop_down</i></a></li>
+          <li><a href="howitworks.html">How it Works</a></li>
+          <!-- <li><a href="#"></a></li> -->
+          <li><a href="#pricing">Pricing</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="team.html">Team</a></li>
-          <li><a href="docs/about.html">Docs</a></li>
-          <li><a href="#">Buy Now!</a></li>
+          <li><a href="https://intercom.help/switchncell" target="_blank">Help Center</a></li>
+
+          <li><a href="team.html"></a></li>
         </ul>
 
         <ul id="pages" class="dropdown-content">
-          <li><a href="horizontal-half.html">Horizontal Halves</a></li>
-          <li><a class="active" href="sierra.html">Zoom Out</a></li>
-          <li><a href="circle-reveal.html">Circle Reveal</a></li>
-          <li><a href="phone-wall.html">Phone Wall</a></li>
-          <li><a href="element-transitions.html">Element Transitions</a></li>
-          <li><a href="basic-elements.html">Basic Elements</a></li>
-          <li><a href="card-shuffle.html">Shuffle</a></li>
-          <li><a href="postcards.html">Postcards</a></li>
+          <li><a href="Order.html">Upgrade or Add New Service</a></li>
+          <li><a href="Loaner.html">Request a loaner</a></li>
+          <li><a href="Repair.html">Repair</a></li>
+          <li><a href="switchnsurance.html">SwitchNsurance</a></li>
+          <!-- <li><a class="active" href="index.html"></a></li>
+          <li><a href="element-transitions.html"></a></li>
+          <li><a href="basic-elements.html"></a></li>
+          <li><a href="card-shuffle.html"></a></li>
+          <li><a href="postcards.html"></a></li> -->
         </ul>
+
 
         <a href="#" data-activates="slide-out" class="button-collapse right"><i class="material-icons white-text">menu</i></a>
       </div>
     </nav>
+
+
     <ul id="slide-out" class="side-nav">
       <li class="no-padding">
         <ul class="collapsible collapsible-accordion">
@@ -69,19 +79,25 @@
     <div class="zoom-out-intro header full-height">
       <div class="header-wrapper row valign-wrapper">
         <div class="col s8 offset-s2 valign">
-          <h1>Startup!</h1>
-          <span class="tagline">Show off your business in a whole new way.</span>
-          <button class="read-more"><i class="icon-caret-down"></i></button>
+          <span class="tagline">Introducing...</span>
+          <h1 class="transparent-text">SwitchNsurance</h1>
+          <span class="tagline">A better protection plan.</span>
+
+
+
+          <a href='#features'class="read-more"><i class="icon-caret-down black-text"></i></a>
+
+
         </div>
       </div>
       <div class="laptop-preview-sizer">
         <div class="laptop-preview"></div>
-        <div class="image-container default" style="background-image:url(http://placehold.it/1440x900)"></div>
+        <div class="image-container default" style="background-image:url(https://s3.us-east-2.amazonaws.com/switchncell/Group+2.svg)"></div>
       </div>
     </div>
 
     <!-- Features -->
-    <div class="section valign-wrapper">
+    <div class="section valign-wrapper" id="features">
       <div class="container">
         <div class="row">
           <div class="col s12"><h2 class="section-title">Features</h2></div>
@@ -192,39 +208,85 @@
 
     <!-- Footer -->
     <footer class="page-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col s6 m3">
-            <img class="materialize-logo" src="images/materialize-teal.png" alt="">
-            <p>Made with love by Materialize.</p>
+    <div class="container">
+  <div class="row">
+
+    <div class="col s4 pull-s7 m3 vertical-align ">
+    <ul>
+      <li><a href="index.html" class=""><img src="https://s3.us-east-2.amazonaws.com/switchncell/color_logo_transparent.svg" alt=""></a></li>
+      <p></p>
+    </ul>
+    </div>
+
+    <div class="col s2 push-s2">
+      <h5>Solutions</h5>
+      <ul>
+        <!-- <li><a href="#!">Community</a></li> -->
+        <li><a href="Order.html">Upgrade or Add Service</a></li>
+        <li><a href="Loaner.html">Loaner Program</a></li>
+        <li><a href="Repair.html">Repair</a></li>
+      </ul>
+    </div>
+
+    <div class="col s1 push-s2">
+    <h5>About</h5>
+    <ul>
+      <li><a href="howitworks.html">How it works</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="https://intercom.help/switchncell" target="_blank">Help Center</a></li>
+
+    </ul>
+  </div>
+    <div class="col s2 push-s3">
+      <h5>Connect</h5>
+      <ul>
+        <!-- <li><a href="#!">Community</a></li> -->
+        <li><a href="http://eepurl.com/cRhTen">Subscribe</a></li>
+        <li><a href="mailto:info@switchncell.com">Email</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+
+
+
+  <div class="col s2 push-s3 vertical-align">
+
+  <ul>
+
+  <li>   <a href="https://www.facebook.com/switchncell/"><i class="fa fa-facebook fa-2x fa-fw" aria-hidden="true"></i></a></li>
+
+  <li>  <a href="https://www.instagram.com/switch_n_cell"><i class="fa fa-instagram fa-2x fa-fw" aria-hidden="true"></i></a></li>
+
+  <li>  <a href="http://www.twitter.com/switchncell"><i class="fa fa-twitter fa-2x fa-fw" aria-hidden="true"></i></a></li>
+
+  </ul>
+
+  </div>
+
+
+
+  </div>
+
+
+
+  </div>
+
+      <div class="footer-copyright" style="">
+            <div class="container valign-wrapper">
+
+          <p>© 2017 Switch N Cell</p>&nbsp;&nbsp;
+
+
+
+  <p><a href="termsofservice.html" class="grey-text">Terms of Service</a>&nbsp;&nbsp;&nbsp;</p>
+
+
+  <p><a href="privacypolicy.html" class="grey-text">Privacy Policy</a>&nbsp;</p>
+
+  </div>
           </div>
-          <div class="col s6 m3">
-            <h5>About</h5>
-            <ul>
-              <li><a href="#!">Blog</a></li>
-              <li><a href="#!">Pricing</a></li>
-              <li><a href="#!">Docs</a></li>
-            </ul>
-          </div>
-          <div class="col s6 m3">
-            <h5>Connect</h5>
-            <ul>
-              <li><a href="#!">Community</a></li>
-              <li><a href="#!">Subscribe</a></li>
-              <li><a href="#!">Email</a></li>
-            </ul>
-          </div>
-          <div class="col s6 m3">
-            <h5>Contact</h5>
-            <ul>
-              <li><a href="#!">Twitter</a></li>
-              <li><a href="#!">Facebook</a></li>
-              <li><a href="#!">Github</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
+  </footer>
 
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
