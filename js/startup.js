@@ -1,5 +1,5 @@
 /*!
- * Startup v1.0.3
+ * Startup v1.0.4
  * Materialize theme
  * http://materializecss.com/themes.html
  * Personal Use License
@@ -111,7 +111,7 @@
     $('.read-more').off('click.read-more').on('click.read-more', function () {
       var sectionHeight = $(this).closest('.section').outerHeight();
       var offset = sectionHeight || window.innerHeight;
-      $('body').animate({scrollTop: offset }, 1000);
+      $('html, body').animate({scrollTop: offset }, 1000);
     });
 
     // Disabled read more button.
@@ -119,7 +119,7 @@
       var ancestor = el.closest(ancestorSelector);
       var height = ancestor.outerHeight();
       var offset = ancestor.offset().top + height;
-      $('body').animate({scrollTop: offset }, 1000);
+      $('html, body').animate({scrollTop: offset }, 1000);
     };
     $('.horizontal-half-wrapper .read-more').off('click.read-more').on('click.read-more', function (e) {
       disabledReadMoreScroll($(this), '.horizontal-half-wrapper');
@@ -283,7 +283,7 @@
               $this.find('.read-more').off('click.read-more').on('click.read-more', function () {
                 var scrollDuration = getOneAndHalfWindowHeight() + window.innerHeight;
                 var offsetAndDuration = dynamicOffsetAndDuration(300, scrollDuration, originalOffset);
-                $('body').animate({scrollTop: offsetAndDuration[0] }, offsetAndDuration[1]);
+                $('html, body').animate({scrollTop: offsetAndDuration[0] }, offsetAndDuration[1]);
               });
 
               var laptop = $this.find('.laptop-preview-sizer');
@@ -343,7 +343,7 @@
               $this.find('.read-more').off('click.read-more').on('click.read-more', function () {
                 var scrollDuration = getWindowHeight();
                 var offsetAndDuration = dynamicOffsetAndDuration(300, scrollDuration, originalOffset);
-                $('body').animate({scrollTop: offsetAndDuration[0] }, offsetAndDuration[1]);
+                $('html, body').animate({scrollTop: offsetAndDuration[0] }, offsetAndDuration[1]);
               });
 
               var columnOne = $this.find('.column-one');
@@ -389,7 +389,7 @@
                 e.stopPropagation();
                 var scrollDuration = getWindowHeight();
                 var offsetAndDuration = dynamicOffsetAndDuration(300, scrollDuration, originalOffset);
-                $('body').animate({scrollTop: offsetAndDuration[0] }, offsetAndDuration[1]);
+                $('html, body').animate({scrollTop: offsetAndDuration[0] }, offsetAndDuration[1]);
               });
 
               var fixedWrapper = $this.find('.fixed-wrapper');
@@ -402,7 +402,7 @@
                 var diff = Math.abs($(window).scrollTop() - offsetTop);
                 var ratio = diff / window.innerHeight;
                 var duration = Math.max(ratio * 1200, 200);
-                $('body').animate({scrollTop: offsetTop }, duration);
+                $('html, body').animate({scrollTop: offsetTop }, duration);
               });
 
 
@@ -445,12 +445,13 @@
               // Read more
               $this.find('.read-more').off('click.read-more').on('click.read-more', function (e) {
                 var index = $(this).closest('.circle-reveal-wrapper').index('.circle-reveal-wrapper') + 1;
-                $('body').animate({scrollTop: originalOffset + (window.innerHeight * index) }, 800);
+                $('html, body').animate({scrollTop: originalOffset + (window.innerHeight * index) }, 800);
               });
 
               var tweenCircleTimeline = new TimelineMax();
               var tweenFadeTimeline = new TimelineMax();
               var len = $('.circle-reveal-wrapper').length;
+              var backgroundLayer = $this.find('.background-layer');
 
               var getFullHeight = function() {
                 return window.innerHeight * len;
@@ -493,7 +494,14 @@
                       .addTo(controller);
               var scene2 = new ScrollMagic.Scene({triggerElement: $this[0], triggerHook: 'onLeave', duration: getFullHeight})
                       .setTween(tweenFadeTimeline)
-                      .on('end', toggleSolid)
+                      .on('end', function(e) {
+                        toggleSolid(e);
+                        if (e.scrollDirection === 'FORWARD') {
+                          backgroundLayer.addClass('end');
+                        } else {
+                          backgroundLayer.removeClass('end');
+                        }
+                      })
                       .addTo(controller);
 
               // Add to list
@@ -509,7 +517,7 @@
               // Read more
               $this.find('.read-more').off('click.read-more').on('click.read-more', function (e) {
                 var index = $(this).closest('.horizontal-half-wrapper').index('.horizontal-half-wrapper') + 1;
-                $('body').animate({scrollTop: originalOffset + (window.innerHeight * 2 * index) }, 1200);
+                $('html, body').animate({scrollTop: originalOffset + (window.innerHeight * 2 * index) }, 1200);
               });
 
               var device = $this.find('.phone-preview-sizer');
@@ -764,6 +772,7 @@
         $.error( 'Method ' +  methodOrOptions + ' does not exist on jQuery.scrollTransition' );
       }
     }; // Plugin end
+
 
     // Init Scroll Transitions
     $('.title-transition').scrollTransition();
