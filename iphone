@@ -57,9 +57,9 @@
       <div class="nav-wrapper">
 
 
-        <a href="/startupsnc/index.html"  class="brand-logo" id="sec1"><img style="max-height:100px;width:200px;margin-left:35px;margin-top:2px;" src="https://s3.us-east-2.amazonaws.com/switchncell/color_logo_transparent.svg"></a>
+        <a href="index.html"  class="brand-logo" id="sec1"><img style="max-height:100px;width:200px;margin-left:35px;margin-top:2px;" src="https://s3.us-east-2.amazonaws.com/switchncell/color_logo_transparent.svg"></a>
 
-        <a href="/startupsnc/index.html"  class="scale-out"><img style="max-height: 64px;width:200px;margin-left:50px;margin-top:1px;" src="https://s3.us-east-2.amazonaws.com/switchncell/white_logo_transparent.svg"></a>
+        <a href="index.html"  class="scale-out"><img style="max-height: 64px;width:200px;margin-left:50px;margin-top:1px;" src="https://s3.us-east-2.amazonaws.com/switchncell/white_logo_transparent.svg"></a>
 
       <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li class="active"><a class="dropdown-button" href="#!" data-activates="pages" data-constrainWidth="false" data-belowOrigin="true">Services<i class="material-icons right">arrow_drop_down</i></a></li>
