@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "hammerjs": "^2.0.4",
-    "jquery": "^2.1.4",
+    "jquery": "^3.5.0",
     "node-archiver": "^0.2.0",
     "typed.js": "^2.0.9"
   },
@@ -34,7 +34,7 @@
     "grunt-sass": "^1.1.0",
     "grunt-server-monitor": "^3.0.0",
     "grunt-text-replace": "^0.4.0",
-    "jquery": "^2.1.4",
+    "jquery": "^3.5.0",
     "node-sass": "^3.4.2"
   },
   "scripts": {
